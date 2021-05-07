@@ -1,0 +1,167 @@
+@media (max-width: 1350px) {
+
+  .search-container {
+
+    overflow: hidden;
+    padding: 0 34px;
+
+  }
+
+  .search-container .overlay{
+
+    left: 0;
+
+  }
+
+  .search-container .menino {
+
+    display: none;
+
+  }
+
+  .search-container .menina {
+
+    z-index: 0;
+    left: 45%;
+
+  } 
+  
+  .search-content {
+
+    width: 100%;
+
+  }
+
+  .search-content h1 span{
+
+    font-size: 52px;
+    display: block;
+
+  }
+
+  .search-wrapper #search {
+
+    width: 100%;
+
+  }
+
+  .search-wrapper button {
+
+    align-self: center;
+
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .main-header {
+
+    background: transparent;
+
+  }
+  .main-header nav {
+
+    display: none;
+
+  } 
+  .main-header .menu-icon {
+
+    display: block;
+
+  }
+
+  /* Banner */
+
+  .banner-container {
+
+    position: relative;
+    top: -32px;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .navigate-next {
+
+    width: 50px;
+    height: 50px;
+    right: 32px;
+
+  }
+
+  .navigate-next i {
+
+    font-size: 36px;
+
+  }
+
+  /* Guias */
+
+  .guia {
+
+    position: relative;
+
+  }
+
+  .guias-container {
+
+    margin-top: 0;
+    padding: 67px 24px;
+    position: relative;
+    top: -60px;
+
+  }
+
+  .guias-container > a {
+
+    display: block;
+
+  }
+
+  .guia-info {
+
+    padding: 8px !important;
+
+  }
+
+  .guia .guia-info h1 {
+
+    font-size: 32px;
+    line-height: 37px;
+    transform: none;
+
+  }
+  
+  .guia .guia-info .guia-info-localizacao {
+
+    margin-bottom: 16px;
+    font-weight: normal;
+
+  }
+  
+  .guia .guia-info .guia-info-localizacao i {
+
+    font-size: 16px;
+    font-weight: normal;
+
+  }
+
+  .guia .guia-info p {
+  
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 105px;
+  
+  }
+
+  .guia .guia-info a {
+
+    background-color: var(--green);
+    position: absolute;
+    bottom: 32px;
+    left: calc( 50% - 88.5px); 
+
+  }
+
+}
