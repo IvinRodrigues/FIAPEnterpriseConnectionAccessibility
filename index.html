@@ -11,10 +11,13 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/medias.css">
   <script type="text/javascript" src="./js/OverlayScrollbars.min.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=en1TakQ3"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script type="text/javascript"> responsiveVoice.setDefaultVoice('Brazilian Portuguese Female')</script>
   <title>Layout Responsivo</title>
 </head>
 
-<body>
+<body onload="loadVoice()">
 
   <div class="modal-wrapper">
     <div class="modal">
@@ -49,19 +52,20 @@
     </div>
       </div>
 
+
   <header class="main-header">
-    <div class="logo">
-      Traveller <i class="material-icons">flight_takeoff</i>
+    <div class="logo focus" tabindex="1">
+      <a onclick='responsiveVoice.speak("Traveller")'>Traveller</a><i class="material-icons">flight_takeoff</i>
     </div>
     <i class="material-icons menu-icon">menu</i>
     <nav>
       <ul>
-        <li class="active">Home</li>
-        <li>Blog</li>
-        <li>Guias</li>
-        <li>Ajuda</li>
-        <li>
-          <i class="material-icons">person</i>
+        <li tabindex="2" class="active focus" onclick='responsiveVoice.speak("Home")'>Home</li>
+        <li tabindex="3" class="focus" onclick='responsiveVoice.speak("Blog")'>Blog</li>
+        <li tabindex="4" class="focus" onclick='responsiveVoice.speak("Guias")'>Guias</li>
+        <li tabindex="5" class="focus" onclick='responsiveVoice.speak("Ajuda")'>Ajuda</li>
+        <li class="focus">
+          <i class="material-icons" onclick='responsiveVoice.speak("Fazer login")'>person</i>
         </li>
       </ul>
     </nav>
@@ -74,10 +78,10 @@
     <img src="assets/Menino.svg" class="menino">
 
     <div class="search-content">
-      <h1>Eai, <span>vai pra onde?</span></h1>
+      <h1 tabindex="-1" onclick='responsiveVoice.speak("Texto principal de entrada: Olá, vai pra onde?")'>Eai,<span>vai pra onde?</span></h1>
       <div class="search-wrapper">
         <label for="search">Digite sua pesquisa</label>
-        <input type="text" id="search">
+        <input type="text" id="search" onclick='responsiveVoice.speak("Digite aqui sua pesquisa de destino")'>
         <button class="main-button">Pesquisar</button>
       </div>
     </div>
@@ -240,7 +244,7 @@
       <p>A melhor experiência em viagens,</br>feito para você!</p>
     </div>
     <div class="social-icons">
-      <p><i class="material-icons">copyright</i>2021 Traveller. Todos os direitos reservados.</p>
+      <p>&copy; 2021 Traveller. Todos os direitos reservados.</p>
       <ul>
         <li><img src="assets/twitter.svg"></li>
         <li><img src="assets/instagram.svg"></li>
@@ -249,8 +253,20 @@
     </div>
   </footer>
 
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
-  
+
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/accessibility.js"></script>
 
 </html>
