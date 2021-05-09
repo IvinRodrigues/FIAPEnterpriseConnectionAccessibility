@@ -12,11 +12,11 @@ function alterarAcessibilidade(elemento) {
 
         if(state == true) {
 
-
+            document.getElementById('body').style.filter = 'grayscale(100%)'
 
         } else {
 
-
+            document.getElementById('body').style.filter = 'grayscale(0%)'
 
         }
 
