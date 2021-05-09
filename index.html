@@ -30,22 +30,22 @@
       <div class="options">
         <label class="switch">
           <span class="switch-title">Daltonismo</span>
-          <input type="checkbox">
+          <input id="daltonismo" onchange="alterarAcessibilidade(this)" type="checkbox">
           <span class="slider round"></span>
         </label>
         <label class="switch">
           <span class="switch-title">Cursor Grande</span>
-          <input type="checkbox">
+          <input id="cursor" onchange="alterarAcessibilidade(this)" type="checkbox">
           <span class="slider round"></span>
         </label>
         <label class="switch">
           <span class="switch-title">Guia de Leitura</span>
-          <input type="checkbox">
+          <input id="guiaLeitura" onchange="alterarAcessibilidade(this)" type="checkbox">
           <span class="slider round"></span>
         </label>
         <label class="switch">
           <span class="switch-title">Fontes Grandes</span>
-          <input type="checkbox">
+          <input id="fonteGrande" onchange="alterarAcessibilidade(this)" type="checkbox">
           <span class="slider round"></span>
         </label>
       </div>
@@ -267,6 +267,7 @@
 </body>
 
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/modal.js"></script>
 <script type="text/javascript" src="./js/accessibility.js"></script>
 
 </html>
