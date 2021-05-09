@@ -3,6 +3,8 @@ localStorage.setItem('cursor', false)
 localStorage.setItem('guiaLeitura', false)
 localStorage.setItem('fonteGrande', false)
 
+let body = document.getElementById('body')
+
 function alterarAcessibilidade(elemento) {
 
     let acessibilidade = elemento.id
@@ -12,11 +14,13 @@ function alterarAcessibilidade(elemento) {
 
         if(state == true) {
 
-            document.getElementById('body').style.filter = 'grayscale(100%)'
+            localStorage.setItem('daltonismo', true)
+            body.style.filter = 'grayscale(100%)'
 
         } else {
 
-            document.getElementById('body').style.filter = 'grayscale(0%)'
+            localStorage.setItem('daltonismo', true)
+            body.style.filter = 'grayscale(0%)'
 
         }
 
@@ -49,11 +53,13 @@ function alterarAcessibilidade(elemento) {
 
         if(state == true) {
 
-
+            localStorage.setItem('daltonismo', true)
+            body.style.zoom = '160%'
 
         } else {
 
-            
+            localStorage.setItem('daltonismo', false)
+            body.style.zoom = '100%'
 
         }
 
