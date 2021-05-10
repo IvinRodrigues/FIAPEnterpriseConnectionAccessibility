@@ -698,4 +698,22 @@ input:checked + .slider:before {
   border: 2px dashed var(--green);  
   border-radius: 8px;
   padding: 6px;  
+  cursor: pointer;
+}
+.focus2:focus {
+  transition: .4s ease-in-out;
+  border: 2px dashed var(--green);  
+  border-radius: 32px;
+  padding: 16px;  
+  cursor: pointer;
+}
+.focus3:focus {
+  transition: .4s ease-in-out;
+  border: 2px dashed var(--green);  
+  border-radius: 32px;
+  cursor: pointer;
+}
+.focus4:focus {
+  border: 2px dashed var(--green);  
+  cursor: pointer;
 }

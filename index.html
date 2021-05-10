@@ -60,7 +60,7 @@
 
   <header class="main-header">
     <div class="logo focus" tabindex="1">
-      <a onclick='responsiveVoice.speak("Traveller")'>Traveller</a><i class="material-icons">flight_takeoff</i>
+      <a onclick='responsiveVoice.speak("Logotipo Traveller")'>Traveller</a><i class="material-icons">flight_takeoff</i>
     </div>
     <i class="material-icons menu-icon">menu</i>
     <nav>
@@ -69,10 +69,10 @@
         <li tabindex="3" class="focus" onclick='responsiveVoice.speak("Blog")'>Blog</li>
         <li tabindex="4" class="focus" onclick='responsiveVoice.speak("Guias")'>Guias</li>
         <li tabindex="5" class="focus" onclick='responsiveVoice.speak("Ajuda")'>Ajuda</li>
-        <li class="focus">
-          <i class="material-icons" onclick='responsiveVoice.speak("Fazer login")'>person</i>
+        <li>
+          <i tabindex="6" class="material-icons focus" onclick='responsiveVoice.speak("Fazer login")'>person</i>
         </li>
-      </ul>
+      </ul>       
     </nav>
   </header>
 
@@ -83,18 +83,18 @@
     <img src="assets/Menino.svg" class="menino">
 
     <div class="search-content">
-      <h1 tabindex="-1" onclick='responsiveVoice.speak("Texto principal de entrada: Olá, vai pra onde?")'>Eai,<span>vai pra onde?</span></h1>
+      <h1 tabindex="7" class="focus" onclick='responsiveVoice.speak("Olá, vai pra onde? Faça sua pesquisa abaixo.")'>Eai,<span>vai pra onde?</span></h1>
       <div class="search-wrapper">
         <label for="search">Digite sua pesquisa</label>
-        <input type="text" id="search" onclick='responsiveVoice.speak("Digite aqui sua pesquisa de destino")'>
-        <button class="main-button">Pesquisar</button>
+        <input type="text" id="search" class="focus" tabindex="8">
+        <button class="main-button focus2" tabindex="9">Pesquisar</button>
       </div>
     </div>
 
   </section>
 
   <section class="banner-container">
-    <h1><i class="material-icons">vertical_split</i> Blog</h1>
+    <h1 tabindex="10" class="focus" onclick='responsiveVoice.speak("Seção Blog")'><i class="material-icons">vertical_split</i> Blog</h1>
     <p>Posts mais recentes</p>
 
     <button class="navigate-next">
@@ -105,7 +105,7 @@
 
     <div class="blog-wrapper">
       <div class="box-blog">
-        <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
+        <img tabindex="11" class="focus3" src="assets/post-blog.png" alt="Homem com mochila nas costas"/>
         <div class="clear"></div>
         <h3>Os melhores lagos da...</h3>
         <div class="location">
@@ -119,10 +119,10 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button class="main-button">Abrir</button>
+        <button tabindex="12" class="main-button focus2">Abrir</button>
       </div>
       <div class="box-blog">
-        <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
+        <img tabindex="13" class="focus3" src="assets/post-blog.png" alt="Homem com mochila nas costas" />
         <div class="clear"></div>
         <h3>Os melhores lagos da...</h3>
         <div class="location">
@@ -136,10 +136,27 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button class="main-button">Abrir</button>
+        <button tabindex="14" class="main-button focus2">Abrir</button>
+      </div>      
+      <div class="box-blog">
+        <img tabindex="15" class="focus3" src="assets/post-blog.png" alt="Homem com mochila nas costas" />
+        <div class="clear"></div>
+        <h3>Os melhores lagos da...</h3>
+        <div class="location">
+          <i class="material-icons">pin_drop</i> São Paulo
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exerci
+          ation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+          Duis aute irure dolor in reprehenderit...
+        </p>
+        <button tabindex="16" class="main-button focus2" class="main-button">Abrir</button>
       </div>
       <div class="box-blog">
-        <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
+        <img tabindex="17" class="focus3" src="assets/post-blog.png" alt="Homem com mochila nas costas" />
         <div class="clear"></div>
         <h3>Os melhores lagos da...</h3>
         <div class="location">
@@ -153,25 +170,7 @@
           commodo consequat.
           Duis aute irure dolor in reprehenderit...
         </p>
-        <button class="main-button">Abrir</button>
-      </div>
-
-      <div class="box-blog">
-        <img src="assets/post-blog.png" alt="Homem com mochila nas costas" />
-        <div class="clear"></div>
-        <h3>Os melhores lagos da...</h3>
-        <div class="location">
-          <i class="material-icons">pin_drop</i> São Paulo
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exerci
-          ation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-          Duis aute irure dolor in reprehenderit...
-        </p>
-        <button class="main-button">Abrir</button>
+        <button  tabindex="18" class="main-button focus2" class="main-button">Abrir</button>
       </div>
       <div class="clear"></div>
     </div>
@@ -180,13 +179,13 @@
 
   <section class="guias-container">
 
-    <h1><i class="material-icons">forum</i> Guias</h1>
+    <h1 tabindex="19" class="focus" onclick='responsiveVoice.speak("Seção Guias")'><i class="material-icons">forum</i> Guias</h1>
     <p>Guias mais recentes</p>
 
     <div class="guias">
 
       <div class="guia">
-        <img src="./assets/masp.jpg">
+        <img tabindex="20" class="focus4" src="./assets/masp.jpg">
         <div class="guia-info">
           <h1>Lorem</h1>
           <span class="guia-info-localizacao">
@@ -198,12 +197,12 @@
             commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
           </p>
-          <a class="main-button">Abrir guia</a>
+          <a tabindex="21" class="main-button">Abrir guia</a>
         </div>
       </div>
 
       <div class="guia">
-        <img src="./assets/masp.jpg">
+        <img tabindex="22" class="focus4" src="./assets/masp.jpg">
         <div class="guia-info">
           <h1>Lorem</h1>
           <span class="guia-info-localizacao">
@@ -215,12 +214,12 @@
             commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
           </p>
-          <a class="main-button">Abrir guia</a>
+          <a tabindex="23" class="main-button">Abrir guia</a>
         </div>
       </div>
 
       <div class="guia">
-        <img src="./assets/masp.jpg">
+        <img tabindex="24" class="focus4" src="./assets/masp.jpg">
         <div class="guia-info">
           <h1>Lorem</h1>
           <span class="guia-info-localizacao">
@@ -232,13 +231,13 @@
             commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
           </p>
-          <a class="main-button">Abrir guia</a>
+          <a tabindex="25" class="main-button">Abrir guia</a>
         </div>
       </div>
 
     </div>
 
-    <a class="main-button">Conferir todos os guias</a>
+    <a tabindex="26" class="main-button focus4">Conferir todos os guias</a>
 
   </section>
 
@@ -251,9 +250,9 @@
     <div class="social-icons">
       <p>&copy; 2021 Traveller. Todos os direitos reservados.</p>
       <ul>
-        <li><img src="assets/twitter.svg"></li>
-        <li><img src="assets/instagram.svg"></li>
-        <li><img src="assets/facebook.svg"></li>
+        <li tabindex="27" class="focus"><img src="assets/twitter.svg"></li>
+        <li tabindex="27" class="focus"><img src="assets/instagram.svg"></li>
+        <li tabindex="27" class="focus"><img src="assets/facebook.svg"></li>
       </ul>
     </div>
   </footer>
