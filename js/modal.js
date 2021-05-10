@@ -10,9 +10,9 @@ function alterarAcessibilidade(elemento) {
     let acessibilidade = elemento.id
     let state = document.getElementById(acessibilidade).checked
 
-    if(acessibilidade == 'daltonismo') {
+    if (acessibilidade == 'daltonismo') {
 
-        if(state == true) {
+        if (state == true) {
 
             localStorage.setItem('daltonismo', true)
             body.style.filter = 'grayscale(100%)'
@@ -24,34 +24,34 @@ function alterarAcessibilidade(elemento) {
 
         }
 
-    } else if(acessibilidade == 'cursor') {
+    } else if (acessibilidade == 'cursor') {
 
-        if(state == true) {
+        if (state == true) {
 
 
 
         } else {
 
-            
+
 
         }
 
     } else if (acessibilidade == 'guiaLeitura') {
 
-        if(state == true) {
+        if (state == true) {
 
 
 
         } else {
 
-            
+
 
         }
 
 
     } else {
 
-        if(state == true) {
+        if (state == true) {
 
             localStorage.setItem('daltonismo', true)
             body.style.zoom = '160%'
@@ -68,3 +68,16 @@ function alterarAcessibilidade(elemento) {
 
 
 }
+
+function iniciaModal() {
+    const modal = document.querySelector('.modal-wrapper');
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (e) => {
+        if (e.target == modalID || e.target.className == 'escModal') {
+            modal.classList.remove('mostrar');
+        }
+    });
+}
+
+const botao = document.querySelector('.accessibility');
+botao.addEventListener('click', () => iniciaModal('modal-wrapper'));

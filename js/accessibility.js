@@ -1,14 +1,11 @@
+function loadVoice(){
+  responsiveVoice.speak("Bem vindo ao Traveller, o seu site de viagens! Aperte a tecla tab para a navegação via teclado.")};
+
 // document.addEventListener("DOMContentLoaded", function() { 
 //   if(responsiveVoice.voiceSupport()) {
 //     responsiveVoice.speak("hello world");
 //   }
-// });
-
-function loadVoice(){
-  responsiveVoice.speak("Bem vindo ao Traveller, o seu site de viagens! Aperte a tecla tab para a navegação via teclado.")};
- 
- 
- 
+// }); 
  
  //  $('a').keyup(function(e) {
  //   console.log('keyup called');
