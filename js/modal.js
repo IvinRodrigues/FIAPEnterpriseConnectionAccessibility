@@ -27,13 +27,12 @@ function alterarAcessibilidade(elemento) {
     } else if (acessibilidade == 'cursor') {
 
         if (state == true) {
-
-
-
+            localStorage.setItem('cursor', true)
+            body.classList.add('bigCursor') 
+            
         } else {
-
-
-
+            localStorage.setItem('cursor', false);
+            body.classList.remove('bigCursor');
         }
 
     } else if (acessibilidade == 'guiaLeitura') {
