@@ -53,7 +53,7 @@ function alterarAcessibilidade(elemento) {
         if (state == true) {
 
             localStorage.setItem('daltonismo', true)
-            body.style.zoom = '160%'
+            body.style.zoom = '130%'
 
         } else {
 
