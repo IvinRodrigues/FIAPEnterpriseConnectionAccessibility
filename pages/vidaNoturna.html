@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/OverlayScrollbars.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/medias.css">
+    <link rel="stylesheet" href="vidaNoturna.css">
+    <script type="text/javascript" src="../js/OverlayScrollbars.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=en1TakQ3"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script type="text/javascript"> responsiveVoice.setDefaultVoice('Brazilian Portuguese Female')</script>
+    <title>Layout Responsivo</title>
+</head>
+
+<body id="body">
+
+    <button class="accessibility zoom-in"><i class="material-icons">
+            settings_accessibility
+        </i></button>
+
+    <div class="modal-wrapper" id="modalID">
+        <div class="modal">
+            <img src="assets/Balaozinho.svg" alt="">
+            <img src="assets/Lupa.svg" alt="">
+            <img class="girl-modal" src="assets/girlmodal.svg" alt="">
+            <h1>Preferências de<br>
+                <span>Acessibilidade</span>
+            </h1>
+            <div class="options">
+                <label class="switch">
+                    <span class="switch-title">Daltonismo</span>
+                    <input id="daltonismo" onchange="alterarAcessibilidade(this)" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="switch-title">Cursor Grande</span>
+                    <input id="cursor" onchange="alterarAcessibilidade(this)" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="switch-title">Guia de Leitura</span>
+                    <input id="guiaLeitura" onchange="alterarAcessibilidade(this)" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="switch-title">Fontes Grandes</span>
+                    <input id="fonteGrande" onchange="alterarAcessibilidade(this)" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="escModal">Fechar</button>
+        </div>
+    </div>
+
+
+    <header class="main-header">
+        <div class="logo focus" tabindex="1">
+            <a onclick='responsiveVoice.speak("Logotipo Traveller")'>Traveller</a><i
+                class="material-icons">flight_takeoff</i>
+        </div>
+        <i class="material-icons menu-icon">menu</i>
+        <nav>
+            <ul>
+                <li tabindex="2" class="active focus" onclick='responsiveVoice.speak("Home")'>Home</li>
+                <li tabindex="3" class="focus" onclick='responsiveVoice.speak("Blog")'>Blog</li>
+                <li tabindex="4" class="focus" onclick='responsiveVoice.speak("Guias")'>Guias</li>
+                <li tabindex="5" class="focus" onclick='responsiveVoice.speak("Ajuda")'>Ajuda</li>
+                <li>
+                    <i tabindex="6" class="material-icons focus"
+                        onclick='responsiveVoice.speak("Fazer login")'>person</i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Nome do Post</h1>
+
+        <p>Vida noturna</p>
+
+        <div class="images">
+
+            <img
+                src="https://www.getlostmagazine.com/wp-content/uploads/2016/01/GL45-BRAZIL-BARS-SKYE_BAR-3-1500x900.jpg">
+            <img
+                src="https://www.getlostmagazine.com/wp-content/uploads/2016/01/GL45-BRAZIL-BARS-SKYE_BAR-3-1500x900.jpg">
+            <img
+                src="https://www.getlostmagazine.com/wp-content/uploads/2016/01/GL45-BRAZIL-BARS-SKYE_BAR-3-1500x900.jpg">
+            <img
+                src="https://www.getlostmagazine.com/wp-content/uploads/2016/01/GL45-BRAZIL-BARS-SKYE_BAR-3-1500x900.jpg">
+            <img
+                src="https://www.getlostmagazine.com/wp-content/uploads/2016/01/GL45-BRAZIL-BARS-SKYE_BAR-3-1500x900.jpg">
+
+        </div>
+
+        <section>
+
+            <article>
+
+                <h1>Sobre o Local</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse,
+                    eius magni dignissimos quod libero assumenda optio corrupti odio incidunt.
+                    Ratione totam impedit autem quia, eum maxime magni, id voluptatibus error consequatur qui illum
+                    labore quis ad magnam provident minima!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse,
+                    eius magni dignissimos quod libero assumenda optio corrupti odio incidunt.
+                    Ratione totam impedit autem quia, eum maxime magni, id voluptatibus error consequatur qui illum
+                    labore quis ad magnam provident minima!
+                </p>
+
+            </article>
+
+            <article>
+
+                <h1>Observações importantes</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse,
+                    eius magni dignissimos quod libero assumenda optio corrupti odio incidunt.
+                    Ratione totam impedit autem quia, eum maxime magni, id voluptatibus error consequatur qui illum
+                    labore quis ad magnam provident minima!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse,
+                    eius magni dignissimos quod libero assumenda optio corrupti odio incidunt.
+                    Ratione totam impedit autem quia, eum maxime magni, id voluptatibus error consequatur qui illum
+                    labore quis ad magnam provident minima!
+                </p>
+
+            </article>
+
+            <article>
+
+                <h1>Como chegar</h1>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6267522649387!2d-46.66925874882172!3d-23.58184516816046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e140e844a5%3A0xee8005a359e780e3!2sSkye!5e0!3m2!1spt-BR!2sbr!4v1620696876158!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </article>
+
+        </section>
+
+        <aside>
+
+            <div class="price">
+
+                <span>valor da entrada</span>
+                <span class="value">150,00</span>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <img src="../assets/verified.svg">
+            <p>A melhor experiência em viagens,</br>feito para você!</p>
+        </div>
+        <div class="social-icons">
+            <p>&copy; 2021 Traveller. Todos os direitos reservados.</p>
+            <ul>
+                <li tabindex="27" class="focus"><img src="../assets/twitter.svg"></li>
+                <li tabindex="27" class="focus"><img src="../assets/instagram.svg"></li>
+                <li tabindex="27" class="focus"><img src="../assets/facebook.svg"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
+<!-- <script type="text/javascript" src="./js/accessibility.js"></script> -->
+
+</html>
