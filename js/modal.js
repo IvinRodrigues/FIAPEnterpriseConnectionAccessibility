@@ -36,14 +36,14 @@ function alterarAcessibilidade(elemento) {
 
     } else if (acessibilidade === 'guiaLeitura') {
         if (state == true) {
-            const guia = document.getElementById('guiaLeitura')
+            const guia = document.getElementById('guiaLeituraLinha')
             localStorage.setItem('guiaLeitura', true)
             body.onmousemove = (e) => {
                 guia.style.visibility = 'visible';
                 guia.style.top = `${e.pageY + 5}px`;
             }
         } else {
-            const guia = document.getElementById('guiaLeitura')
+            const guia = document.getElementById('guiaLeituraLinha')
             localStorage.setItem('guiaLeitura', false)
             guia.style.visibility = 'hidden';
         }
@@ -51,12 +51,12 @@ function alterarAcessibilidade(elemento) {
 
         if (state == true) {
 
-            localStorage.setItem('daltonismo', true)
+            localStorage.setItem('fonteGrande', true)
             body.style.zoom = '130%'
 
         } else {
 
-            localStorage.setItem('daltonismo', false)
+            localStorage.setItem('fonteGrande', false)
             body.style.zoom = '100%'
 
         }
