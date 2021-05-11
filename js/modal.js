@@ -6,7 +6,6 @@ localStorage.setItem('fonteGrande', false)
 let body = document.getElementById('body')
 
 function alterarAcessibilidade(elemento) {
-
     let acessibilidade = elemento.id
     let state = document.getElementById(acessibilidade).checked
 
@@ -31,33 +30,33 @@ function alterarAcessibilidade(elemento) {
             body.classList.add('bigCursor') 
             
         } else {
-            localStorage.setItem('cursor', false);
-            body.classList.remove('bigCursor');
+            localStorage.setItem('cursor', true)
+            body.classList.remove('bigCursor')
         }
 
-    } else if (acessibilidade == 'guiaLeitura') {
-
+    } else if (acessibilidade === 'guiaLeitura') {
         if (state == true) {
-
-
-
+            const guia = document.getElementById('guiaLeituraLinha')
+            localStorage.setItem('guiaLeitura', true)
+            body.onmousemove = (e) => {
+                guia.style.visibility = 'visible';
+                guia.style.top = `${e.pageY + 5}px`;
+            }
         } else {
-
-
-
+            const guia = document.getElementById('guiaLeituraLinha')
+            localStorage.setItem('guiaLeitura', false)
+            guia.style.visibility = 'hidden';
         }
-
-
     } else {
 
         if (state == true) {
 
-            localStorage.setItem('daltonismo', true)
+            localStorage.setItem('fonteGrande', true)
             body.style.zoom = '130%'
 
         } else {
 
-            localStorage.setItem('daltonismo', false)
+            localStorage.setItem('fonteGrande', false)
             body.style.zoom = '100%'
 
         }
